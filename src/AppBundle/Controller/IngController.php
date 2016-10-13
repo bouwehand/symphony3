@@ -6,17 +6,14 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class LuckyController extends Controller
+class IngController extends Controller
 {
     /**
-    * @Route("/lucky/number")
+    * @Route("/ing/index")
     */
-    public function numberAction()
+    public function indexAction()
     {
-        $number = mt_rand(0, 100);
-    
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-            );
+        // replace this example code with whatever you need
+        return $this->render('ing/index.html.php');
     }
 }
